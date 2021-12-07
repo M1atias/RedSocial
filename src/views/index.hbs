@@ -1,0 +1,31 @@
+<div class="card">
+  <div class="card-header">
+          <h5 class="card-title">
+              <i class="far fa-image"></i>
+              Upload a image
+            </h5>
+    </div>
+      <div class="card-body">
+    <div class="container-fluid">
+        <form action="/images" method="POST">
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Choose file</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="mb-3">
+            <label for="inputTitle" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-auto">
+                <input type="text" name="title" placeholder="Title for the image" class="form-control" id="inputTitle" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="descriptionTextarea" class="form-label">Description</label>
+            <textarea class="form-control" name="description" id="descriptionTextarea" placeholder="Description for the image" rows="2" required></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-success" type="submit"> <i class="fa fa-upload"></i> Upload image</button>
+        </div>
+        </form>
+    </div>
+      </div>
+</div>
